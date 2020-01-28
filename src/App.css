@@ -1,0 +1,88 @@
+/* reset */
+
+html, body, h1, h2, h3, nav, ul, li {
+    
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+a, button {
+    cursor: pointer;
+}
+
+a:focus, button:focus, input:focus {
+    outline: none; 
+}
+
+
+body {
+    background: #f0f3f7;
+    font-family: 'Muli', sans-serif;
+    
+}
+
+.orange {
+    color: rgb(218, 162, 77);
+}
+.red {
+    color: rgb(224, 77, 77);
+}
+
+.orange:hover {
+    color: rgb(170, 117, 37);
+}
+.red:hover {
+    color: rgb(170, 35, 35);
+}
+
+.h3 {
+    padding: 10px; 
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+
+  .grid-head {
+    flex-direction: column;
+    justify-content: left;
+}
+
+ .grid-item {
+    flex-direction: column;
+    align-items: unset ;
+    justify-content: left;
+}
+.input-item input {
+    width: 70%;
+}
+
+.orange {
+    font-size: 2.7em;
+}
+.red {
+    font-size: 2.7em;
+}
+
+.input-item {
+    padding: 0px ;
+}
+
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
